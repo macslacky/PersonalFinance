@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GestisciMovimentoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="160dp">
+        <TextView
+            android:id="@+id/txtEditMovBanca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtTitolo"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1AFFF9C4"
+            android:text="@string/data"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtDati" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtEditMovData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/select_date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtDati" />
+            <ImageButton
+                android:id="@+id/btnEditMovData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/select_date"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/calendar0" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/valuta"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtDati" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtEditMovValuta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/select_date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtDati" />
+            <ImageButton
+                android:id="@+id/btnEditMovValuta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/select_date"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/calendar0" />
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/rdgEditInOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <EditText
+                android:id="@+id/txtEditMovImporto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/importo"
+                android:autofillHints="@string/inserireimporto"
+                android:ems="10"
+                android:inputType="number|numberDecimal"
+                android:text=""
+                android:textColor="@color/colorEntrate"
+                android:textSize="@dimen/txtDati" />
+            <RadioButton
+                android:id="@+id/btnEditIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/entrata"
+                android:buttonTint="@color/colorEntrate"
+                android:textColor="@color/colorEntrate"
+                android:textSize="@dimen/txtDati" />
+            <RadioButton
+                android:id="@+id/btnEditOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorUscite"
+                android:textColor="@color/colorUscite"
+                android:textSize="@dimen/txtDati"
+                android:text="@string/uscita" />
+        </RadioGroup>
+        <EditText
+            android:id="@+id/txtEditMovNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/aggiungi_nota"
+            android:hint="@string/aggiungi_nota"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtDati" />
+        <!--android:inputType="textMultiLine"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btnEditMovSalva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/salva"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/save" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <ImageButton
+                android:id="@+id/btnEditMovCancella"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/cancella"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/cancella" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <ImageButton
+                android:id="@+id/btnEditMovAnnulla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/annulla"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/annulla" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

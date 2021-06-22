@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- theme used for the splashscreen -->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- image to be displayed in the window -->
+        <item name="android:windowBackground">@drawable/ic_launcher_splashscreen</item>
+        <!-- hides the title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- enable full screen -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- theme used for the main activity -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

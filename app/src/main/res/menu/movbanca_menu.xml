@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/movbanca_NewMovimento" android:title="@string/movbanca_NewMovimento" />
+    <item android:id="@+id/movbanca_ListaBanche" android:title="@string/movbanca_ListaBanche" />
+    <item android:id="@+id/movbanca_about" android:title="@string/movbanca_about" />
+</menu>

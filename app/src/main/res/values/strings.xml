@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">PersonalFinance</string>
+
+    <string name="nomebanca">Nome Banca</string>
+
+    <!-- activity_nuova_banca -->
+    <string name="infonomebanca">digitare il nome della banca</string>
+    <string name="salvanuovabanca">Salva i dati della nuova banca</string>
+    <string name="annullarichiesta">Annulla la richiesta</string>
+
+    <!-- activity_movimenti_banca -->
+    <string name="saldo">Saldo:&#160;</string>
+    <string name="movBancaMovimenti">Movimenti</string>
+    <string name="dataInizio">Inizio: </string>
+    <string name="dataFine">Fine: </string>
+    <string name="filtro">Applica il filtro</string>
+
+    <!-- activity:gestisci_movimento -->
+    <string name="data">Data</string>
+    <string name="select_date">Seleziona data… </string>
+    <string name="valuta">Valuta</string>
+    <string name="inserireimporto">digitare l\'importo…</string>
+    <string name="importo">0.00</string>
+    <string name="entrata">Entrata</string>
+    <string name="uscita">Uscita</string>
+    <string name="aggiungi_nota">Scrivi una breve descrizione</string>
+    <string name="salva">Salva</string>
+    <string name="cancella">Cancella</string>
+    <string name="annulla">Annulla</string>
+
+    <!-- Menu -->
+    <string name="main_NewBanca">Nuova Banca</string>
+    <string name="main_about">about</string>
+
+    <string name="movbanca_NewMovimento">Nuovo Movimento</string>
+    <string name="movbanca_ListaBanche">Lista Banche</string>
+    <string name="movbanca_about">about</string>
+</resources>

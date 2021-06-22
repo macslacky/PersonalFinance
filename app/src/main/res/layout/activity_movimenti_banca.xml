@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovimentiBancaActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/txtMovNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80BBDEFB"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtTitolo"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80BBDEFB"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saldo"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtDati" />
+            <TextView
+                android:id="@+id/txtMovSaldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorEntrate"
+                android:textSize="@dimen/txtDati" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BBDEFB"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/movBancaMovimenti"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtDati" />
+            <ImageButton
+                android:id="@+id/btnMovFiltra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/salva"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/filter" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnlFiltro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dataInizio"
+                        android:textSize="@dimen/txtDati" />
+                    <ImageButton
+                        android:id="@+id/btnMovDataInizio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/select_date"
+                        app:srcCompat="@drawable/calendar0" />
+                    <TextView
+                        android:id="@+id/txtMovDataInizio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/select_date"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/txtDati" />
+                </LinearLayout>
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dataFine"
+                        android:textSize="@dimen/txtDati" />
+                    <ImageButton
+                        android:id="@+id/btnMovDataFine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/select_date"
+                        app:srcCompat="@drawable/calendar0" />
+                    <TextView
+                        android:id="@+id/txtMovDataFine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/select_date"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/txtDati" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btnMovApplicaFiltro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/filtro"
+                    app:srcCompat="@drawable/enter" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+        <ListView
+            android:id="@+id/lstMovListaMovimenti"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

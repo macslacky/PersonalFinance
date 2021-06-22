@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuovoMovimentoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtNewMovBanca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nomebanca"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtTitolo"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/data"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtDati" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtNewMovData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/select_date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtDati" />
+            <ImageButton
+                android:id="@+id/btnNewMovData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/select_date"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/calendar0" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/valuta"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtDati" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtNewMovValuta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/select_date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txtDati" />
+            <ImageButton
+                android:id="@+id/btnNewMovValuta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/select_date"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/calendar0" />
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/rdgEntrataUscita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <EditText
+                android:id="@+id/txtNewMovImporto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/importo"
+                android:autofillHints="@string/inserireimporto"
+                android:ems="10"
+                android:inputType="number|numberDecimal"
+                android:text=""
+                android:textColor="@color/colorEntrate"
+                android:textSize="@dimen/txtDati" />
+            <RadioButton
+                android:id="@+id/btnEntrata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorEntrate"
+                android:checked="true"
+                android:text="@string/entrata"
+                android:textColor="@color/colorEntrate"
+                android:textSize="@dimen/txtDati" />
+            <RadioButton
+                android:id="@+id/btnUscita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorUscite"
+                android:textColor="@color/colorUscite"
+                android:textSize="@dimen/txtDati"
+                android:text="@string/uscita" />
+        </RadioGroup>
+        <EditText
+            android:id="@+id/txtNewMovNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/aggiungi_nota"
+            android:autofillHints="@string/aggiungi_nota"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txtDati" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btnNewMovSalva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/salva"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/save" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <ImageButton
+                android:id="@+id/btnNewMovAnnulla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/salva"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/annulla" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

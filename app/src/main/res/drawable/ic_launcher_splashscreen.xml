@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- contains a list of drawables, drawn in matrix order -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- background color -->
+    <item>
+        <color android:color="@color/spalsh_background_color" />
+    </item>
+    <!-- the logo of app -->
+    <item>
+        <bitmap android:src="@drawable/personalfinance"
+            android:tileMode="disabled" android:gravity="center" />
+    </item>
+</layer-list>
